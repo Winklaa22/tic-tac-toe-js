@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=IBM+Plex+Sans+Arabic:wght@300&family=Noto+Nastaliq+Urdu&family=Noto+Sans+TC:wght@100&family=Permanent+Marker&display=swap');
+
+:root {
+    --normalColor: #2792a4;
+    --hoverColor: #4acbe2;
+    --backgroundColor: #3a3a54;
+    --winBoxesColor: #fc696b;
+    --boxTextColor: #fdf4e1;
+}
+
+body{
+    background-color: var(--backgroundColor);
+    font-family: 'Permanent Marker', cursive;
+}
+
+.title{
+    font-size: 400%;
+    color: var(--boxTextColor);
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.content{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.game-map{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: var(--normalColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0);
+    font-size: 120px;
+    font-family: 'Permanent Marker', cursive;  
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.61);  
+    transition: 0.3s ease-in-out;
+  }
+
+.box:hover{
+    background-color: var(--hoverColor);
+    transform: scale(1.05);
+}
+
+.onBoxClicked{
+    color: var(--boxTextColor);
+    pointer-events: none;
+}
+
+.inactive-hover {
+    pointer-events: none;
+}
+
+.reset-button{
+    width: 250px;
+    height: 90px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    color: var(--boxTextColor);
+    background-color: var(--winBoxesColor);
+    border-radius: 15px;
+    border: none;
+    font-size: 50px;
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.61);  
+    transition: 0.3s ease-in-out ;
+}
+
+.reset-button:hover {
+    transform: scale(1.05);
+    background-color: var(--hoverColor);
+}
+
+
+
+
